@@ -20,9 +20,9 @@ const App = () => {
         gap:"5rem"
       }}
     >
-      {/* <LineComponent /> */}
-      {/* <BarComponent /> */}
-      {/* <PieComponent /> */}
+      {/* <LineComponent />
+      <BarComponent />
+      <PieComponent /> */}
       <TaskChartLine />
       <TaskChartBar />
     </div>

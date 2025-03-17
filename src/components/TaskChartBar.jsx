@@ -28,8 +28,6 @@ export const TaskChartBar = () => {
     setEmployee(e.target.value);
   };
 
-  console.log();
-
   const updatedData =
     employee === "all"
       ? TaskChartData
@@ -111,21 +109,29 @@ export const TaskChartBar = () => {
   return (
     <div
       style={{
-        background: "#f3f3f3",
-        padding: "20px",
-        borderRadius: "20px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
       }}
     >
-      {/* <div>
-          <h2 style={{
-            fontSize:'24px'
-          }}>Task Completed by Employee</h2>
-        </div> */}
-
       <div>
+        <h2
+          style={{
+            fontSize: "24px",
+            marginBottom:'1rem'
+          }}
+        >
+          Bar Chart
+        </h2>
+      </div>
+
+      <div
+        style={{
+          background: "#f3f3f3",
+          padding: "20px",
+          borderRadius: "20px",
+        }}
+      >
         <label htmlFor="emp">Employee : </label>
         <select
           style={{

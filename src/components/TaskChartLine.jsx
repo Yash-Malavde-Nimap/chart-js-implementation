@@ -75,7 +75,7 @@ export const TaskChartLine = () => {
           color: "black",
         },
         min: 0,
-        max:40,
+        max: 40,
         // max: Math.max(TaskChartData.datasets[0].data) + 10,
       },
     },
@@ -113,21 +113,29 @@ export const TaskChartLine = () => {
   return (
     <div
       style={{
-        background: "#f3f3f3",
-        padding: "20px",
-        borderRadius: "20px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
       }}
     >
-      {/* <div>
-        <h2 style={{
-          fontSize:'24px'
-        }}>Task Completed by Employee</h2>
-      </div> */}
-
       <div>
+        <h2
+          style={{
+            fontSize: "24px",
+            marginBottom:'1rem'
+          }}
+        >
+          Line Chart
+        </h2>
+      </div>
+
+      <div
+        style={{
+          background: "#f3f3f3",
+          padding: "20px",
+          borderRadius: "20px",
+        }}
+      >
         <label htmlFor="emp">Employee : </label>
         <select
           style={{
